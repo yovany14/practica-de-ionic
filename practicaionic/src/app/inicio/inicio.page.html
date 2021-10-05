@@ -1,16 +1,9 @@
-<ion-header [translucent]="true">
-  <ion-toolbar color="myowncolor">
-    <ion-buttons slot="start">
-      <ion-back-button defaulthref="/"></ion-back-button>
-    </ion-buttons>
-    <ion-title>inicio</ion-title>
-  </ion-toolbar>
-</ion-header>
-
+<!---->
+<app-header titulo='inicio'></app-header>
 
 <ion-content>
   <div id="container">
-    <p>Esta es mi pagina de inicio</p>
-    <ion-button [routerLink]="['/clientes']" color="myowncolor">Go to clientes</ion-button>
-  </div>
+    <p><strong>Esta es mi pagina de Inicio</strong></p>
+    <ion-button color="mycolor" [routerLink]="['/clientes']">Go to Clientes</ion-button>
+    </div>
 </ion-content>

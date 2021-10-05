@@ -1,22 +1,22 @@
+import { ComponentsModule } from './../components/components.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ClientesPageRoutingModule } from './clientes-routing.module';
+import { ActionsPageRoutingModule } from './actions-routing.module';
 
-import { ClientesPage } from './clientes.page';
-import { ComponentsModule } from '../components/components.module';
+import { ActionsPage } from './actions.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ClientesPageRoutingModule,
+    ActionsPageRoutingModule,
     ComponentsModule
   ],
-  declarations: [ClientesPage]
+  declarations: [ActionsPage]
 })
-export class ClientesPageModule {}
+export class ActionsPageModule {}

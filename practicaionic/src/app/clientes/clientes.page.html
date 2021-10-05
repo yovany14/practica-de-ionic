@@ -1,11 +1,11 @@
-<!---->
+<!-- -->
+<app-header titulo="Clientes"></app-header>
 
-<app-header></app-header>
 <ion-content>
-  <div id="container">
-    <p><strong> Mi Pagina de Clientes</p></strong>
-    
-    <ion-button [routerLink]="['/inicio']" color="myowncolor">Go Inicio</ion-button>
-
-  </div>
+    <ion-list>
+        <ion-item *ngFor="let c of componentes" [routerLink]='c.redirectTo' detail="true">
+          {{c.name}}
+          <ion-icon slot="start" [name]='c.icon'></ion-icon>
+        </ion-item>
+      </ion-list>
 </ion-content>

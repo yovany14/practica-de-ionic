@@ -4,5 +4,13 @@
     left: 0;
     right: 0;
     top: 50%;
-    transform: rotateY(50%);
+    transform: translate Y(-50%);
+}
+
+ion-toolbar {
+    background-color: var(--ion-color-mycolor);
+}
+
+ion-button {
+    background-color: var(--ion-color-mycolor);
 }
